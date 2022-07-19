@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "YSCUAd67KAY2rpPdM/Z5WBUv7rBRCQlEa90Vhkt1/7B2oy33WaNo6e1iKHuhBzwrUz/IWzscsFINwl4R53jdFg==",
-  "success": true,
-  "projectFilePath": "/Users/Andrew/Projects/DietCoach/DietCoach.App/DietCoach.App.csproj",
+  "dgSpecHash": "hpf2XDMtr3XR4h7DNQJ/uIfYBzrmInKbmjFgM3sBcxVG0JQoKwmPVl3yHiin4zFFenr4CC/EM3q10OR76liTiw==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Grozz\\Revature\\DietCoach.App\\DietCoach.App.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1108",
+      "level": "Error",
+      "message": "Cycle detected. \r\n  DietCoach.App -> DietCoach.Logic -> DietCoach.App.",
+      "libraryId": "DietCoach.App",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

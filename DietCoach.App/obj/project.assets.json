@@ -1,37 +1,65 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "DietCoach.Logic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DietCoach.App": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DietCoach.Logic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DietCoach.Logic.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DietCoach.Logic/1.0.0": {
+      "type": "project",
+      "path": "../DietCoach.Logic/DietCoach.Logic.csproj",
+      "msbuildProject": "../DietCoach.Logic/DietCoach.Logic.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "DietCoach.Logic >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "/Users/Andrew/.nuget/packages/": {}
+    "C:\\Users\\Grozz\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Andrew/Projects/DietCoach/DietCoach.App/DietCoach.App.csproj",
+      "projectUniqueName": "C:\\Users\\Grozz\\Revature\\DietCoach.App\\DietCoach.App.csproj",
       "projectName": "DietCoach.App",
-      "projectPath": "/Users/Andrew/Projects/DietCoach/DietCoach.App/DietCoach.App.csproj",
-      "packagesPath": "/Users/Andrew/.nuget/packages/",
-      "outputPath": "/Users/Andrew/Projects/DietCoach/DietCoach.App/obj/",
+      "projectPath": "C:\\Users\\Grozz\\Revature\\DietCoach.App\\DietCoach.App.csproj",
+      "packagesPath": "C:\\Users\\Grozz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Grozz\\Revature\\DietCoach.App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/Andrew/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Grozz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Grozz\\Revature\\DietCoach.Logic\\DietCoach.Logic.csproj": {
+              "projectPath": "C:\\Users\\Grozz\\Revature\\DietCoach.Logic\\DietCoach.Logic.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -58,8 +86,19 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1108",
+      "level": "Error",
+      "message": "Cycle detected. \r\n  DietCoach.App -> DietCoach.Logic -> DietCoach.App.",
+      "libraryId": "DietCoach.App",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
