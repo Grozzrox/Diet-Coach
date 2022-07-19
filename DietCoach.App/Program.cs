@@ -36,7 +36,7 @@ namespace DietCoach
                         break;
                 }
             }
-            Console.WriteLine("Application closin...");
+            Console.WriteLine("Application closing...");
         }
     }
 }
