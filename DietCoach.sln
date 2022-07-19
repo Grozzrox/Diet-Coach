@@ -5,6 +5,13 @@ VisualStudioVersion = 25.0.1700.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietCoach.App", "DietCoach.App\DietCoach.App.csproj", "{C06BDE80-D00C-4C84-83C4-3ABB172AE6E0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7FA4DEE7-8263-4094-A14D-286095EC7D07}"
+	ProjectSection(SolutionItems) = preProject
+		DietCoach.sln = DietCoach.sln
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietCoach.Logic", "DietCoach.Logic\DietCoach.Logic.csproj", "{41F69600-2532-4006-B250-FCBB84E8E96A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{C06BDE80-D00C-4C84-83C4-3ABB172AE6E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C06BDE80-D00C-4C84-83C4-3ABB172AE6E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C06BDE80-D00C-4C84-83C4-3ABB172AE6E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41F69600-2532-4006-B250-FCBB84E8E96A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41F69600-2532-4006-B250-FCBB84E8E96A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41F69600-2532-4006-B250-FCBB84E8E96A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41F69600-2532-4006-B250-FCBB84E8E96A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

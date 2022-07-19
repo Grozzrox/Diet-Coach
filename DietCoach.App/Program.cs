@@ -1,6 +1,7 @@
 ﻿using System;
+using DietCoach.Logic;
 
-namespace DietCoach
+namespace DietCoach.App
 {
     class Program
     {
@@ -12,10 +13,10 @@ namespace DietCoach
             while(loop)
             {
                 Console.WriteLine("Please select an option:");
-                Console.WriteLine("1: Read from file.");
-                Console.WriteLine("2: Write to file.");
-                Console.WriteLine("3: Create Xml Record");
-                Console.WriteLine("4: Read from Xml Record");
+                Console.WriteLine("1: Login");
+                Console.WriteLine("2: Add Check in");
+                Console.WriteLine("3: Get Data");
+                Console.WriteLine("4: Create Account");
                 Console.WriteLine("0: Exit.");
 
                 string? choice = Console.ReadLine();
@@ -23,7 +24,13 @@ namespace DietCoach
                 switch(choice)
                 {
                     case "1":
-                        Console.WriteLine("Selected option 1. Good choice ;)");
+                        Console.WriteLine("What is your first name?");
+                        string? firstname = Console.ReadLine();
+
+                        Console.WriteLine("What is your last name?");
+                        string? lastname = Console.ReadLine();
+
+                        Person p1 = new Person();
                         break;
                     case "2":
                         loop = false;
