@@ -1,0 +1,15 @@
+/Users/Andrew/Projects/DietCoach/DietCoach.App/bin/Debug/net6.0/DietCoach.App
+/Users/Andrew/Projects/DietCoach/DietCoach.App/bin/Debug/net6.0/DietCoach.App.deps.json
+/Users/Andrew/Projects/DietCoach/DietCoach.App/bin/Debug/net6.0/DietCoach.App.runtimeconfig.json
+/Users/Andrew/Projects/DietCoach/DietCoach.App/bin/Debug/net6.0/DietCoach.App.dll
+/Users/Andrew/Projects/DietCoach/DietCoach.App/bin/Debug/net6.0/DietCoach.App.pdb
+/Users/Andrew/Projects/DietCoach/DietCoach.App/obj/Debug/net6.0/DietCoach.App.csproj.AssemblyReference.cache
+/Users/Andrew/Projects/DietCoach/DietCoach.App/obj/Debug/net6.0/DietCoach.App.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Andrew/Projects/DietCoach/DietCoach.App/obj/Debug/net6.0/DietCoach.App.AssemblyInfoInputs.cache
+/Users/Andrew/Projects/DietCoach/DietCoach.App/obj/Debug/net6.0/DietCoach.App.AssemblyInfo.cs
+/Users/Andrew/Projects/DietCoach/DietCoach.App/obj/Debug/net6.0/DietCoach.App.csproj.CoreCompileInputs.cache
+/Users/Andrew/Projects/DietCoach/DietCoach.App/obj/Debug/net6.0/DietCoach.App.dll
+/Users/Andrew/Projects/DietCoach/DietCoach.App/obj/Debug/net6.0/refint/DietCoach.App.dll
+/Users/Andrew/Projects/DietCoach/DietCoach.App/obj/Debug/net6.0/DietCoach.App.pdb
+/Users/Andrew/Projects/DietCoach/DietCoach.App/obj/Debug/net6.0/DietCoach.App.genruntimeconfig.cache
+/Users/Andrew/Projects/DietCoach/DietCoach.App/obj/Debug/net6.0/ref/DietCoach.App.dll
