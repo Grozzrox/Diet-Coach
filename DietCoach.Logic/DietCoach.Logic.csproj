@@ -5,8 +5,4 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\DietCoach.App\DietCoach.App.csproj" />
-  </ItemGroup>
 </Project>

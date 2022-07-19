@@ -5,9 +5,6 @@
       "DietCoach.Logic/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "DietCoach.App": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/DietCoach.Logic.dll": {}
         },
@@ -89,16 +86,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1108",
-      "level": "Error",
-      "message": "Cycle detected. \r\n  DietCoach.App -> DietCoach.Logic -> DietCoach.App.",
-      "libraryId": "DietCoach.App",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  }
 }

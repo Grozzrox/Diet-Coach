@@ -1,18 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hpf2XDMtr3XR4h7DNQJ/uIfYBzrmInKbmjFgM3sBcxVG0JQoKwmPVl3yHiin4zFFenr4CC/EM3q10OR76liTiw==",
-  "success": false,
+  "dgSpecHash": "LBJW1ii461N8nOq9lYN+8YOQpg8yL3NtjLaK5+wbudBMIdyYaosdVJf4irHjOv0GdnSxCmPyHfjSksM0pAo15A==",
+  "success": true,
   "projectFilePath": "C:\\Users\\Grozz\\Revature\\DietCoach.App\\DietCoach.App.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1108",
-      "level": "Error",
-      "message": "Cycle detected. \r\n  DietCoach.App -> DietCoach.Logic -> DietCoach.App.",
-      "libraryId": "DietCoach.App",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }

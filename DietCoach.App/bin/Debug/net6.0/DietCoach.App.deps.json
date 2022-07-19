@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "DietCoach.App/1.0.0": {
+        "dependencies": {
+          "DietCoach.Logic": "1.0.0"
+        },
         "runtime": {
           "DietCoach.App.dll": {}
+        }
+      },
+      "DietCoach.Logic/1.0.0": {
+        "runtime": {
+          "DietCoach.Logic.dll": {}
         }
       }
     }
   },
   "libraries": {
     "DietCoach.App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DietCoach.Logic/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

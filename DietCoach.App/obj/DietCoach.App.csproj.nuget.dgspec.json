@@ -85,11 +85,7 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {
-              "C:\\Users\\Grozz\\Revature\\DietCoach.App\\DietCoach.App.csproj": {
-                "projectPath": "C:\\Users\\Grozz\\Revature\\DietCoach.App\\DietCoach.App.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
