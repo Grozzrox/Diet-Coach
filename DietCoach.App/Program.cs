@@ -30,8 +30,10 @@ namespace DietCoach.App
                         Console.WriteLine("What is your last name?");
                         string? lastname = Console.ReadLine();
 
-                        Person p1 = new Person(firstname, lastname, firstname+1, lastname+123);
-                        Console.WriteLine(p1.Introduce());
+                        Person p1 = new Person(firstname, lastname);
+       
+                        Console.WriteLine(p1.Login());
+                        loop = false;
                         break;
                     case "2":
                         loop = false;
