@@ -31,8 +31,12 @@ namespace DietCoach.App
                         string? lastname = Console.ReadLine();
 
                         Person p1 = new Person(firstname, lastname);
+                        Login l1 = new Login(p1.username, p1.password);
        
                         Console.WriteLine(p1.Login());
+                        Console.WriteLine(p1.username);
+                        Console.WriteLine(l1.username);
+                        Console.WriteLine(l1.verifyAccount(l1.username, p1.username));
                         loop = false;
                         break;
                     case "2":

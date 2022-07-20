@@ -9,8 +9,8 @@ namespace DietCoach.Logic
 
         string? firstname;
         string? lastname;
-        string? username;
-        string password = "pass";
+        public string? username;
+        public string password = "pass";
 
         public Person()
         { }
@@ -23,13 +23,13 @@ namespace DietCoach.Logic
             this.password = this.password + "123";
         }
 
-       /* public string Introduce()
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.Append($"Hello there, my name is {this.firstname} {this.lastname} and my username is {this.username} and pass: {this.password}.");
-            return sb.ToString();
-        }
-       */
+        /* public string Introduce()
+         {
+             StringBuilder sb = new StringBuilder();
+             sb.Append($"Hello there, my name is {this.firstname} {this.lastname} and my username is {this.username} and pass: {this.password}.");
+             return sb.ToString();
+         }
+        */
 
         public string Login()
         {
@@ -39,7 +39,7 @@ namespace DietCoach.Logic
                 Console.WriteLine("Please enter your username: ");
                 string? usr = Console.ReadLine();
 
-                if (usr == this.username)
+                if (usr == username)
                 {
                     loop = false;
                 }
@@ -50,7 +50,7 @@ namespace DietCoach.Logic
                 }
             }
             StringBuilder str = new StringBuilder();
-            str.Append($"Welcome, {this.firstname}.");
+            str.Append($"Welcome, {firstname}.");
             return str.ToString();
 
         }
