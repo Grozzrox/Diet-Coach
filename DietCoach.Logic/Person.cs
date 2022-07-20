@@ -69,6 +69,7 @@ namespace DietCoach.Logic
                 }
             }
             StringBuilder str = new StringBuilder();
+            Console.WriteLine("\n");
             str.Append($"Welcome, {firstname}.");
             return str.ToString();
 

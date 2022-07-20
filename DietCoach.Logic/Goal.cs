@@ -33,6 +33,7 @@ namespace DietCoach.Logic
 
         public string goalCheck()
         {
+            Console.WriteLine("\n");
             Console.WriteLine("What is your fitness goal?");
 
             bool loop = true;
@@ -42,6 +43,7 @@ namespace DietCoach.Logic
                 Console.WriteLine("2: Lose weight");
                 Console.WriteLine("3: Maintain weight");
                 Console.WriteLine("0: Exit.");
+                Console.WriteLine("\n");
 
                 string? choice = Console.ReadLine();
 
@@ -55,8 +57,10 @@ namespace DietCoach.Logic
                         double ansForWeight = Int32.Parse(Console.ReadLine());
 
                         Console.WriteLine("About how many calories do you eat in a day?");
+                        
                         int ansForCals = Int32.Parse(Console.ReadLine());
                         ansForCals += 250;
+                        Console.WriteLine("\n");
 
                         Goal g2 = new Goal((ansForWeight / 2.2), ansForSex, "gain", ansForCals, ((ansForCals * .50)/4), ((ansForCals * .30)/9), ((ansForCals * 0.2)/4));
 
@@ -68,6 +72,12 @@ namespace DietCoach.Logic
                         Console.WriteLine($"Fat: {g2.fat} g");
                         Console.WriteLine($"Protein: {g2.protein} g");
 
+                        var table = new ConsoleTable("weight (kg)", "sex", "goal", "calories", "carbs (g)", "fat (g)", "protein (g)");
+                        table.AddRow(Math.Round(g2.weight), g2.sex, g2.goal, g2.calories, Math.Round(g2.carbs), Math.Round(g2.fat), Math.Round(g2.protein));
+
+                        table.Write();
+                        Console.WriteLine();
+
                         loop = false;
                         break;
                     case "2":
@@ -78,8 +88,10 @@ namespace DietCoach.Logic
                         ansForWeight = Int32.Parse(Console.ReadLine());
 
                         Console.WriteLine("About how many calories do you eat in a day?");
+                        
                         ansForCals = Int32.Parse(Console.ReadLine());
                         ansForCals -= 250;
+                        Console.WriteLine("\n");
 
                         Goal g3 = new Goal((ansForWeight / 2.2), ansForSex, "lose", ansForCals, ((ansForCals * .50) / 4), ((ansForCals * .30) / 9), ((ansForCals * 0.2) / 4));
 
@@ -90,6 +102,13 @@ namespace DietCoach.Logic
                         Console.WriteLine($"Carbs: {g3.carbs} g");
                         Console.WriteLine($"Fat: {g3.fat} g");
                         Console.WriteLine($"Protein: {g3.protein} g");
+
+                        table = new ConsoleTable("weight (kg)", "sex", "goal", "calories", "carbs (g)", "fat (g)", "protein (g)");
+                        table.AddRow(Math.Round(g3.weight), g3.sex, g3.goal, g3.calories, Math.Round(g3.carbs), Math.Round(g3.fat), Math.Round(g3.protein));
+
+                        table.Write();
+                        Console.WriteLine();
+
                         loop = false;
                         break;
                     case "3":
@@ -101,6 +120,7 @@ namespace DietCoach.Logic
 
                         Console.WriteLine("About how many calories do you eat in a day?");
                         ansForCals = Int32.Parse(Console.ReadLine());
+                        Console.WriteLine("\n");
 
                         Goal g4 = new Goal((ansForWeight / 2.2), ansForSex, "maintain", ansForCals, ((ansForCals * .50) / 4), ((ansForCals * .30) / 9), ((ansForCals * 0.2) / 4));
 
@@ -111,11 +131,18 @@ namespace DietCoach.Logic
                         Console.WriteLine($"Carbs: {g4.carbs} g");
                         Console.WriteLine($"Fat: {g4.fat} g");
                         Console.WriteLine($"Protein: {g4.protein} g");
+
+                        table = new ConsoleTable("weight (kg)", "sex", "goal", "calories", "carbs (g)", "fat (g)", "protein (g)");
+                        table.AddRow(Math.Round(g4.weight), g4.sex, g4.goal, g4.calories, Math.Round(g4.carbs), Math.Round(g4.fat), Math.Round(g4.protein));
+
+                        table.Write();
+                        Console.WriteLine();
+
                         loop = false;
                         break;
                     case "0":
-                        var table = new ConsoleTable("weight (lbs)", "sex", "goal", "calories", "carbs (g)", "fat (g)", "protein (g)");
-                        table.AddRow(g1.weight, g1.sex, g1.goal, g1.calories, g1.carbs, g1.fat, g1.protein);
+                        table = new ConsoleTable("weight (kg)", "sex", "goal", "calories", "carbs (g)", "fat (g)", "protein (g)");
+                        table.AddRow(Math.Round(g1.weight), g1.sex, g1.goal, g1.calories, Math.Round(g1.carbs), Math.Round(g1.fat), Math.Round(g1.protein));
 
                         table.Write();
                         Console.WriteLine();
@@ -128,7 +155,7 @@ namespace DietCoach.Logic
                 }
             }
             StringBuilder sb = new StringBuilder();
-            sb.Append("Thank you for using Diet Coach. See you later!");
+            sb.Append("Exiting Goals...");
             return sb.ToString();
         }
     }

@@ -17,6 +17,7 @@ namespace DietCoach.App
                 Console.WriteLine("2: Login");
                 Console.WriteLine("3: Get Data");
                 Console.WriteLine("0: Exit.");
+                Console.WriteLine("\n");
 
                 string? choice = Console.ReadLine();
 
@@ -31,7 +32,9 @@ namespace DietCoach.App
 
                         Person p2 = new Person(firstname, lastname);
 
+                        Console.WriteLine("\n");
                         Console.WriteLine("Account created.");
+                        Console.WriteLine("\n");
                         Console.WriteLine(p2.Login(p2.username, p2.password));
 
                         Console.WriteLine(Goal.g1.goalCheck());
@@ -54,6 +57,7 @@ namespace DietCoach.App
                 }
             }
             Console.WriteLine("Thank you for using Diet Coach!");
+            Console.WriteLine("\n");
         }
 
     }
