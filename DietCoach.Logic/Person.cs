@@ -35,7 +35,7 @@ namespace DietCoach.Logic
          }
         */
 
-        public string Login()
+        public string Login(string user, string userpass)
         {
             bool loop = true;
             while (loop)
@@ -43,7 +43,7 @@ namespace DietCoach.Logic
                 Console.WriteLine("Please enter your username: ");
                 string? usr = Console.ReadLine();
 
-                if (usr == username)
+                if (usr == user)
                 {
                     loop = false;
                 }
@@ -59,7 +59,7 @@ namespace DietCoach.Logic
                 Console.WriteLine("Please enter your password: ");
                 string? pass = Console.ReadLine();
 
-                if (pass == password)
+                if (pass == userpass)
                 {
                     loop = false;
                 }

@@ -8,6 +8,11 @@ namespace DietCoach.Logic
 {
     public class Login
     {
+
+        public Login()
+        { }
+
+        /*
         public string username;
         public string pass;
         public Login(string username, string pass)
@@ -21,5 +26,6 @@ namespace DietCoach.Logic
             bool check = username1.Equals(username2);
             return check.ToString();
         }
+        */
     }
 }
