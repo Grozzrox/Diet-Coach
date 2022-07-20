@@ -92,7 +92,7 @@ namespace DietCoach.Logic
                             Console.WriteLine($"{l6.calories - 200} Calories");
                             Console.WriteLine($"{l6.carbs - 27}g Carbs");
                             Console.WriteLine($"{l6.fat - 10}g Fat");
-                            Console.WriteLine($"{l6.protein - 1}g Protein");
+                            Console.WriteLine($"{l6.protein - 2}g Protein");
 
                             break;
                         }
@@ -106,8 +106,8 @@ namespace DietCoach.Logic
                             Console.WriteLine("You have not lost enough weight for your current goal. Your weekly calories have been decreased by 200.");
                             Console.WriteLine($"New target macros:");
                             Console.WriteLine($"{l6.calories - 200} Calories");
-                            Console.WriteLine($"{l6.carbs - 26}g Carbs");
-                            Console.WriteLine($"{l6.fat - 12}g Fat");
+                            Console.WriteLine($"{l6.carbs - 17}g Carbs");
+                            Console.WriteLine($"{l6.fat - 5}g Fat");
                             Console.WriteLine($"{l6.protein - 2}g Protein");
 
                             break;
