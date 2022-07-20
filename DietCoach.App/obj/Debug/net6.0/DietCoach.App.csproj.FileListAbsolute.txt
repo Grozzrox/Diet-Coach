@@ -31,3 +31,4 @@ C:\Users\Grozz\Revature\DietCoach.App\obj\Debug\net6.0\refint\DietCoach.App.dll
 C:\Users\Grozz\Revature\DietCoach.App\obj\Debug\net6.0\DietCoach.App.pdb
 C:\Users\Grozz\Revature\DietCoach.App\obj\Debug\net6.0\DietCoach.App.genruntimeconfig.cache
 C:\Users\Grozz\Revature\DietCoach.App\obj\Debug\net6.0\ref\DietCoach.App.dll
+C:\Users\Grozz\Revature\DietCoach.App\bin\Debug\net6.0\ConsoleTables.dll
