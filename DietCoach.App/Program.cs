@@ -13,15 +13,14 @@ namespace DietCoach.App
             while(loop)
             {
                 Console.WriteLine("Please select an option:");
-                Console.WriteLine("1: Login");
-                Console.WriteLine("2: Add Check in");
+                Console.WriteLine("1: Create an Account");
+                Console.WriteLine("2: Login");
                 Console.WriteLine("3: Get Data");
-                Console.WriteLine("4: Create Account");
                 Console.WriteLine("0: Exit.");
 
                 string? choice = Console.ReadLine();
 
-                switch(choice)
+                switch (choice)
                 {
                     case "1":
                         Console.WriteLine("What is your first name?");
@@ -30,22 +29,17 @@ namespace DietCoach.App
                         Console.WriteLine("What is your last name?");
                         string? lastname = Console.ReadLine();
 
-                        Person p1 = new Person(firstname, lastname);
-                        Login l1 = new Login(p1.username, p1.password);
-       
-                        Console.WriteLine(p1.Login());
-                        Console.WriteLine(p1.username);
-                        Console.WriteLine(l1.username);
-                        Console.WriteLine(l1.verifyAccount(l1.username, p1.username));
+                        Person p2 = new Person(firstname, lastname);
+                        Login l1 = new Login(p2.username, p2.password);
+
+                        Console.WriteLine(p2.Login());
+                        
                         loop = false;
                         break;
                     case "2":
                         loop = false;
                         break;
                     case "3":
-                        loop = false;
-                        break;
-                    case "4":
                         loop = false;
                         break;
                     case "0":
@@ -56,7 +50,8 @@ namespace DietCoach.App
                         break;
                 }
             }
-            Console.WriteLine("Application closing...");
+            Console.WriteLine("Thank you for using Diet Coach!");
         }
+
     }
 }
