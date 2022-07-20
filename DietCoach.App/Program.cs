@@ -15,7 +15,6 @@ namespace DietCoach.App
                 Console.WriteLine("Please select an option:");
                 Console.WriteLine("1: Create an Account");
                 Console.WriteLine("2: Login");
-                Console.WriteLine("3: Get Data");
                 Console.WriteLine("0: Exit.");
                 Console.WriteLine("\n");
 
@@ -43,9 +42,8 @@ namespace DietCoach.App
                         break;
                     case "2":
                         Console.WriteLine(Person.p1.Login(Person.p1.username, Person.p1.password));
-                        loop = false;
-                        break;
-                    case "3":
+                        
+                        Console.WriteLine(Login.l1.Data());
                         loop = false;
                         break;
                     case "0":
